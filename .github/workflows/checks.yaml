@@ -1,0 +1,39 @@
+name: Syntax, type and code style checks
+
+# Выполнять действия при каждом пуше
+on: [push]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Клонирование репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Установка Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12' # Укажите нужную версию Python
+
+      # Установка зависимостей
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Проверка с использованием Ruff
+      - name: Run Ruff
+        uses: chartboost/ruff-action@v1
+
+      # Проверка с использованием Pyright
+      - name: Run Pyright
+        uses: jakebailey/pyright-action@v1
+
+      # Проверка с использованием Black
+      - name: Run Black
+        uses: psf/black@stable
+
+      - name: Run tests
+        run: |
+          pytest
