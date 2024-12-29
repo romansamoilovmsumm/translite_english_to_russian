@@ -38,3 +38,9 @@ From now on, all comments and descriptions of methods and functions will be in R
 - make test_archive: Генерирует папки в ./test_folders_and_archives и в папку ./test_archives сохраняет папки с обёртками
 - make test_unarchive: Генерирует папки в ./test_folders_and_archives и в папку ./test_archives сохраняет папки с обёртками, а затем удаляет обёртки и результат сохраняет в ./test_unarchived
 - make clean: удаляет папки, которые могли быть созданы выше.
+
+## Documentation
+
+You can find the documentation [here](https://romansamoilovmsumm.github.io/translite_english_to_russian/).
+
+
