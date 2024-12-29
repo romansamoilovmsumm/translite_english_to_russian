@@ -130,7 +130,7 @@ def test_of_one_folder_0():
         # Создание папок и файлов
         folder_path = os.path.join(test_directory, folders[0])
         os.makedirs(folder_path, exist_ok=True)
-        with open(os.path.join(folder_path, f"file.txt"), "w") as f:
+        with open(os.path.join(folder_path, "file.txt"), "w") as f:
             f.write(f"This is a test file for folder {folders[0]}")
 
         # Переименование
@@ -161,7 +161,7 @@ def test_of_one_folder_1():
         # Создание папок и файлов
         folder_path = os.path.join(test_directory, folders[1])
         os.makedirs(folder_path, exist_ok=True)
-        with open(os.path.join(folder_path, f"file.txt"), "w") as f:
+        with open(os.path.join(folder_path, "file.txt"), "w") as f:
             f.write(f"This is a test file for folder {folders[1]}")
 
         # Переименование
@@ -192,7 +192,7 @@ def test_of_one_folder_2():
         # Создание папок и файлов
         folder_path = os.path.join(test_directory, folders[2])
         os.makedirs(folder_path, exist_ok=True)
-        with open(os.path.join(folder_path, f"file.txt"), "w") as f:
+        with open(os.path.join(folder_path, "file.txt"), "w") as f:
             f.write(f"This is a test file for folder {folders[2]}")
 
         # Переименование
