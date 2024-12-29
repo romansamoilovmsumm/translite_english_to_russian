@@ -111,5 +111,5 @@ target-version = ['py310', 'py311', 'py312']
 
 
 [tool.pytest.ini_options]
-python_files = "*test_.py"
+python_files = "test_*.py"
 python_functions = "test_*"
