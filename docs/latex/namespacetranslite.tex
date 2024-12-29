@@ -1,0 +1,84 @@
+\doxysection{translite Namespace Reference}
+\hypertarget{namespacetranslite}{}\label{namespacetranslite}\index{translite@{translite}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacetranslite_a32ca49a35d98be74398a32fa44eb83dc}{transliterate}} (str text)
+\item 
+str \mbox{\hyperlink{namespacetranslite_a66c9b27f607fa78dac7a587a15e8eba3}{convert\+\_\+file\+\_\+name}} (str file\+\_\+name)
+\item 
+None \mbox{\hyperlink{namespacetranslite_a5e45529104b403c919bc8c54a7c75c8a}{rename\+\_\+files\+\_\+in\+\_\+directory}} (str directory)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacetranslite_ab2c8fb0cd2127c6a03e0c6c22621c64e}{translit\+\_\+dict}}
+\item 
+str \mbox{\hyperlink{namespacetranslite_a1cb98903b361a48b352ceafbd8c9ca02}{test\+\_\+directory}} = "{}./test\+\_\+folders\+\_\+and\+\_\+archives"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetranslite_a66c9b27f607fa78dac7a587a15e8eba3}\index{translite@{translite}!convert\_file\_name@{convert\_file\_name}}
+\index{convert\_file\_name@{convert\_file\_name}!translite@{translite}}
+\doxysubsubsection{\texorpdfstring{convert\_file\_name()}{convert\_file\_name()}}
+{\footnotesize\ttfamily \label{namespacetranslite_a66c9b27f607fa78dac7a587a15e8eba3} 
+ str translite.\+convert\+\_\+file\+\_\+name (\begin{DoxyParamCaption}\item[{str}]{file\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Преобразование имени с учётом расширения.
+Функция применяет транслитерацию к основному имени и сохраняет расширение.
+
+file_name (str): Имя файла с расширением.
+
+:return: str: Преобразованное имя файла.
+\end{DoxyVerb}
+ \Hypertarget{namespacetranslite_a5e45529104b403c919bc8c54a7c75c8a}\index{translite@{translite}!rename\_files\_in\_directory@{rename\_files\_in\_directory}}
+\index{rename\_files\_in\_directory@{rename\_files\_in\_directory}!translite@{translite}}
+\doxysubsubsection{\texorpdfstring{rename\_files\_in\_directory()}{rename\_files\_in\_directory()}}
+{\footnotesize\ttfamily \label{namespacetranslite_a5e45529104b403c919bc8c54a7c75c8a} 
+ None translite.\+rename\+\_\+files\+\_\+in\+\_\+directory (\begin{DoxyParamCaption}\item[{str}]{directory}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Изменяет название файлов и директорий в указанной директории.
+
+:directory: str: Путь к директории, в которую будут переименованы папки и файлы.
+
+:return: None
+\end{DoxyVerb}
+ \Hypertarget{namespacetranslite_a32ca49a35d98be74398a32fa44eb83dc}\index{translite@{translite}!transliterate@{transliterate}}
+\index{transliterate@{transliterate}!translite@{translite}}
+\doxysubsubsection{\texorpdfstring{transliterate()}{transliterate()}}
+{\footnotesize\ttfamily \label{namespacetranslite_a32ca49a35d98be74398a32fa44eb83dc} 
+ str translite.\+transliterate (\begin{DoxyParamCaption}\item[{str}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Применяет транслитерацию к тексту.
+
+:text (str): Текст для транслитерации.
+
+:return: str: Текст с транслитерацией.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetranslite_a1cb98903b361a48b352ceafbd8c9ca02}\index{translite@{translite}!test\_directory@{test\_directory}}
+\index{test\_directory@{test\_directory}!translite@{translite}}
+\doxysubsubsection{\texorpdfstring{test\_directory}{test\_directory}}
+{\footnotesize\ttfamily \label{namespacetranslite_a1cb98903b361a48b352ceafbd8c9ca02} 
+translite.\+test\+\_\+directory = "{}./test\+\_\+folders\+\_\+and\+\_\+archives"{}}
+
+\Hypertarget{namespacetranslite_ab2c8fb0cd2127c6a03e0c6c22621c64e}\index{translite@{translite}!translit\_dict@{translit\_dict}}
+\index{translit\_dict@{translit\_dict}!translite@{translite}}
+\doxysubsubsection{\texorpdfstring{translit\_dict}{translit\_dict}}
+{\footnotesize\ttfamily \label{namespacetranslite_ab2c8fb0cd2127c6a03e0c6c22621c64e} 
+dict translite.\+translit\+\_\+dict}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'a'}:\ \textcolor{stringliteral}{'а'},\ \textcolor{stringliteral}{'b'}:\ \textcolor{stringliteral}{'б'},\ \textcolor{stringliteral}{'v'}:\ \textcolor{stringliteral}{'в'},\ \textcolor{stringliteral}{'g'}:\ \textcolor{stringliteral}{'г'},\ \textcolor{stringliteral}{'d'}:\ \textcolor{stringliteral}{'д'},\ \textcolor{stringliteral}{'e'}:\ \textcolor{stringliteral}{'е'},\ \textcolor{stringliteral}{'yo'}:\ \textcolor{stringliteral}{'ё'},\ \textcolor{stringliteral}{'zh'}:\ \textcolor{stringliteral}{'ж'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'z'}:\ \textcolor{stringliteral}{'з'},\ \textcolor{stringliteral}{'i'}:\ \textcolor{stringliteral}{'и'},\ \textcolor{stringliteral}{'j'}:\ \textcolor{stringliteral}{'й'},\ \textcolor{stringliteral}{'k'}:\ \textcolor{stringliteral}{'к'},\ \textcolor{stringliteral}{'l'}:\ \textcolor{stringliteral}{'л'},\ \textcolor{stringliteral}{'m'}:\ \textcolor{stringliteral}{'м'},\ \textcolor{stringliteral}{'n'}:\ \textcolor{stringliteral}{'н'},\ \textcolor{stringliteral}{'o'}:\ \textcolor{stringliteral}{'о'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'p'}:\ \textcolor{stringliteral}{'п'},\ \textcolor{stringliteral}{'r'}:\ \textcolor{stringliteral}{'р'},\ \textcolor{stringliteral}{'s'}:\ \textcolor{stringliteral}{'с'},\ \textcolor{stringliteral}{'t'}:\ \textcolor{stringliteral}{'т'},\ \textcolor{stringliteral}{'u'}:\ \textcolor{stringliteral}{'у'},\ \textcolor{stringliteral}{'f'}:\ \textcolor{stringliteral}{'ф'},\ \textcolor{stringliteral}{'h'}:\ \textcolor{stringliteral}{'х'},\ \textcolor{stringliteral}{'c'}:\ \textcolor{stringliteral}{'ц'},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'ch'}:\ \textcolor{stringliteral}{'ч'},\ \textcolor{stringliteral}{'sh'}:\ \textcolor{stringliteral}{'ш'},\ \textcolor{stringliteral}{'shch'}:\ \textcolor{stringliteral}{'щ'},\ \textcolor{stringliteral}{'yu'}:\ \textcolor{stringliteral}{'ю'},\ \textcolor{stringliteral}{'ya'}:\ \textcolor{stringliteral}{'я'},\ \textcolor{stringliteral}{'ey'}:\ \textcolor{stringliteral}{'э'},\ \textcolor{stringliteral}{'yi'}:\ \textcolor{stringliteral}{'ы'},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'kh'}:\ \textcolor{stringliteral}{'х'},\ \textcolor{stringliteral}{'ts'}:\ \textcolor{stringliteral}{'ц'},\ \textcolor{stringliteral}{'ye'}:\ \textcolor{stringliteral}{'е'},\ \textcolor{stringliteral}{'y'}:\ \textcolor{stringliteral}{'ы'}}
+\DoxyCodeLine{00007\ \}}
+
+\end{DoxyCode}

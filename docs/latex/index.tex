@@ -1,0 +1,45 @@
+\chapter{Главная страница}
+\hypertarget{index}{}\label{index}\index{Главная страница@{Главная страница}}
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Введение}{Введение}}\label{index_autotoc_md1}
+This project was originally conceived as a useful code. In e-\/books, the names of books and folders are often written in transliteration, so it is inconvenient to work with the original folder names, and you have to translate them. The code is pretty simple, but I decided to post it anyway as an example of how to use Git\+Hub, hooks, pre-\/commits, and Git\+Hub jobs.
+
+From now on, all comments and descriptions of methods and functions will be in Russian. This is necessary so that the English-\/speaking audience can better understand the purpose of the project, as they do not encounter such problems because the file names are already written in English.
+
+Этот проект изначально задумывался как полезный код. В электронных книгах часто названия книг и папок записываются в транслитерации, поэтому работать с исходными названиями папок неудобно, и приходится их переводить. Код достаточно простой, однако я всё равно решил опубликовать этот проект как мой иллюстрация моего умения работать с гитхабом, хуками, прекоммитами и гитхабными джобами.
+
+Алгоритм следующий\+:
+\begin{DoxyEnumerate}
+\item У нас есть папка, в которой остальные папки и архивы, мы для каждой папки (или архива) создаём папку с аналогичным название.
+\item Переводим внешние папки (не нарушая свойств внутренних элементов).
+\item Сортируем и работаем со внешними папками.
+\item Удаляем внешние папки после требуемых сортировок.
+\end{DoxyEnumerate}
+
+Например у нас есть архив "{}\+Kamnem\+\_\+po\+\_\+golove.\+zip"{}, то программа создаст папку с содержимым \#\+\_\+\+Kamnem\+\_\+po\+\_\+golove/\+Kamnem\+\_\+po\+\_\+golove.zip, затем переведёт и получит \#\+\_\+Камнем\+\_\+по\+\_\+голове/\+Kamnem\+\_\+po\+\_\+golove.zip, что позволит работать с обёртками, понимая их содержимое, а затем безболезненно после требуемой сортировки удалить папку и сохранить содержимое. \#\+\_\+ здесь написан для того, чтобы определять какие именно папки являются обрёртками, а какие полноценными папки, которые трогать не стоит.
+
+Также проект используется для демонтрации работы Doxygen.\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Основные возможности проекта}{Основные возможности проекта}}\label{index_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Возможность работать с программой при помощи Makefile, а именно сгенерировать тестовую директорию, создать надпапки, а также удалять подпапки.
+\item Генерация HTML и PDF документации.
+\item Перевод названий папок.
+\item Создание обёрток для файлов, которые позволяют работать с обёртками, не а с изначальными папками.
+\item Удаление обёрток.
+\item Демонстрация работы с pytest.
+\end{DoxyItemize}\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Как использовать Doxygen}{Как использовать Doxygen}}\label{index_autotoc_md3}
+
+\begin{DoxyEnumerate}
+\item Установите Doxygen.
+\item Настройте конфигурацию в {\ttfamily Doxyfile}.
+\item Выполните команду {\ttfamily doxygen}, чтобы сгенерировать документацию.
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md4}{}\doxysection{\texorpdfstring{Как использовать Makefile}{Как использовать Makefile}}\label{index_autotoc_md4}
+
+\begin{DoxyItemize}
+\item make test\+\_\+all\+: Проводит все тесты
+\item make test\+\_\+translite\+: Генерирует папки в ./test\+\_\+folders\+\_\+and\+\_\+archives и демонстрирует как работает перевод транслита, изменяя названия файлов в этой же папке.
+\item make test\+\_\+archive\+: Генерирует папки в ./test\+\_\+folders\+\_\+and\+\_\+archives и в папку ./test\+\_\+archives сохраняет папки с обёртками
+\item make test\+\_\+unarchive\+: Генерирует папки в ./test\+\_\+folders\+\_\+and\+\_\+archives и в папку ./test\+\_\+archives сохраняет папки с обёртками, а затем удаляет обёртки и результат сохраняет в ./test\+\_\+unarchived
+\item make clean\+: удаляет папки, которые могли быть созданы выше. 
+\end{DoxyItemize}
