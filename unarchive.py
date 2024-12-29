@@ -2,6 +2,7 @@ import os
 import shutil
 import sys
 
+
 def unwrap_wrappers(wrapper_path: str, output_path: str) -> None:
     """
     Копирует содержимое обёрток (папок с одним элементом внутри), если их название начинается с '#_',
@@ -38,7 +39,9 @@ def unwrap_wrappers(wrapper_path: str, output_path: str) -> None:
                 else:
                     shutil.copy(inner_item_path, dest_path)
 
-                print(f"Содержимое обёртки '{full_item_path}' скопировано в '{dest_path}'.")
+                print(
+                    f"Содержимое обёртки '{full_item_path}' скопировано в '{dest_path}'."
+                )
             else:
                 # Копируем папку, если она не обёртка или содержит больше одного элемента
                 dest_path = os.path.join(output_path, item)
@@ -50,10 +53,13 @@ def unwrap_wrappers(wrapper_path: str, output_path: str) -> None:
             shutil.copy(full_item_path, dest_path)
             print(f"Файл '{full_item_path}' скопирован в '{dest_path}'.")
 
+
 if __name__ == "__main__":
     # Проверяем количество аргументов
     if len(sys.argv) != 3:
-        print("Использование: python3 unwrap.py <путь_к_папке> <путь_к_выходной_директории>")
+        print(
+            "Использование: python3 unwrap.py <путь_к_папке> <путь_к_выходной_директории>"
+        )
         sys.exit(1)
 
     # Получаем пути из аргументов командной строки

@@ -45,6 +45,7 @@ def archive(folder_path: str, archive_path: str) -> None:
         else:
             print(f"Пропущен: {full_item_path} не является файлом или папкой.")
 
+
 if __name__ == "__main__":
     # Проверяем количество аргументов
     if len(sys.argv) != 3:
