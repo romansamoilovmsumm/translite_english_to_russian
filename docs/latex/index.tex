@@ -17,7 +17,7 @@ From now on, all comments and descriptions of methods and functions will be in R
 \item Удаляем внешние папки после требуемых сортировок.
 \end{DoxyEnumerate}
 
-Например у нас есть архив "{}\+Kamnem\+\_\+po\+\_\+golove.\+zip"{}, то программа создаст папку с содержимым \#\+\_\+\+Kamnem\+\_\+po\+\_\+golove/\+Kamnem\+\_\+po\+\_\+golove.zip, затем переведёт и получит \#\+\_\+Камнем\+\_\+по\+\_\+голове/\+Kamnem\+\_\+po\+\_\+golove.zip, что позволит работать с обёртками, понимая их содержимое, а затем безболезненно после требуемой сортировки удалить папку и сохранить содержимое. \#\+\_\+ здесь написан для того, чтобы определять какие именно папки являются обрёртками, а какие полноценными папки, которые трогать не стоит.
+Например у нас есть архив "{}\+Kamnem\+\_\+po\+\_\+golove.\+zip"{}, то программа создаст папку с содержимым \#\+\_\+\+Kamnem\+\_\+po\+\_\+golove/\+Kamnem\+\_\+po\+\_\+golove.\+zip, затем переведёт и получит \#\+\_\+Камнем\+\_\+по\+\_\+голове/\+Kamnem\+\_\+po\+\_\+golove.zip, что позволит работать с обёртками, понимая их содержимое, а затем безболезненно после требуемой сортировки удалить папку и сохранить содержимое. \#\+\_\+ здесь написан для того, чтобы определять какие именно папки являются обрёртками, а какие полноценными папки, которые трогать не стоит.
 
 Также проект используется для демонтрации работы Doxygen.\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Основные возможности проекта}{Основные возможности проекта}}\label{index_autotoc_md2}
 
@@ -41,5 +41,6 @@ From now on, all comments and descriptions of methods and functions will be in R
 \item make test\+\_\+translite\+: Генерирует папки в ./test\+\_\+folders\+\_\+and\+\_\+archives и демонстрирует как работает перевод транслита, изменяя названия файлов в этой же папке.
 \item make test\+\_\+archive\+: Генерирует папки в ./test\+\_\+folders\+\_\+and\+\_\+archives и в папку ./test\+\_\+archives сохраняет папки с обёртками
 \item make test\+\_\+unarchive\+: Генерирует папки в ./test\+\_\+folders\+\_\+and\+\_\+archives и в папку ./test\+\_\+archives сохраняет папки с обёртками, а затем удаляет обёртки и результат сохраняет в ./test\+\_\+unarchived
-\item make clean\+: удаляет папки, которые могли быть созданы выше. 
-\end{DoxyItemize}
+\item make clean\+: удаляет папки, которые могли быть созданы выше.
+\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\doxysection{\texorpdfstring{Documentation}{Documentation}}\label{index_autotoc_md5}
+You can find the documentation \href{https://romansamoilovmsumm.github.io/translite_english_to_russian/}{\texttt{ here}}. 
